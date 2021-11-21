@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import App from './components/App.vue'
 import ProductInfo from './components/ProductInfo.vue'
 import ProductsList from './components/ProductsList.vue'
+import store from './store'
 
 const routes = [
     { path: '/', component: ProductsList },
@@ -20,4 +21,5 @@ new Vue({
     render: h => h(App),
     el: '#app',
     router,
+    store,
 })
